@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard</title>
+<style>
+  body{margin:0;font-family:Arial,sans-serif;background:#f9fafc;color:#333;display:flex}
+  .sidebar{width:220px;background:#0b74de;color:#fff;height:100vh;padding:1rem;box-sizing:border-box}
+  .sidebar h2{margin-top:0}
+  .sidebar a{display:block;color:#fff;text-decoration:none;margin:.6rem 0}
+  .main{flex:1;display:flex;flex-direction:column}
+  .topbar{background:#fff;padding:1rem;box-shadow:0 2px 6px rgba(0,0,0,0.08)}
+  .content{padding:1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+  .card{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+  .card h3{margin-top:0;color:#0b74de}
+  .chart-placeholder{height:150px;background:#f0f4f9;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#555}
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <h2>Dashboard</h2>
+  <a href="#">Overview</a>
+  <a href="#">Analytics</a>
+  <a href="#">Reports</a>
+  <a href="#">Settings</a>
+</div>
+
+<div class="main">
+  <div class="topbar">
+    <h2>Welcome, Admin</h2>
+  </div>
+  <div class="content">
+    <div class="card">
+      <h3>Users</h3>
+      <p>Total: 1,245</p>
+    </div>
+    <div class="card">
+      <h3>Sales</h3>
+      <p>Today: $3,560</p>
+    </div>
+    <div class="card">
+      <h3>Performance</h3>
+      <div class="chart-placeholder">Chart Placeholder</div>
+    </div>
+    <div class="card">
+      <h3>Notifications</h3>
+      <ul>
+        <li>New user registered</li>
+        <li>Server uptime 99.9%</li>
+        <li>Monthly report ready</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
